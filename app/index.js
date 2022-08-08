@@ -11,8 +11,8 @@ const customer = address;
 
 customer.address = Amazing street;
 customer.address = London;
-customer.address = Amazing street;
-customer.address = Amazing street;
+customer.address = Middlesex;
+customer.address = NW67EU;
 
 /**
  * TODO: Assign your own values to meet the conditions below:
