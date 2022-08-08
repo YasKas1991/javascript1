@@ -11,23 +11,32 @@ customer.address = {
   city: "London",
   state: "Middlesex",
   zipcode: "NW67EU",
-};
+}; // did not understand syntax so that i could mutate objects
 
 console.log(`Welcome, ${customer.firstName}`);
 
+const quantity = 100;
 const product = {
   name: "",
   price: 10,
   description: "",
-  quantity: 10,
+  quantity: "0",
 };
-
+//quantity is variable in scope of object product
 const total = product.price * 7;
-
+//total is global variable
 console.log(total >= 100);
 
 //product.quantity = product.quantity -7;
 product.quantity -= 7;
+
+if (product.quantity) {
+  console.log("It's in stock");
+} else {
+  console.log("Out of stock");
+}
+
+// Any non-empty string is truthy
 
 /**
  * TODO: Assign your own values to meet the conditions below:
