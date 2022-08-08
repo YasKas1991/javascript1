@@ -1,18 +1,33 @@
-const customer =
-{
-firstName:"Yaser",
-lastName:"Kasim",
-id:50,
-phoneNumber:"0739884325"
-email:"yaskas@outlook.com"
+const customer = {
+  firstName: "Yaser",
+  lastName: "Kasim",
+  id: 50,
+  phoneNumber: "0739884325",
+  email: "yaskas@outlook.com",
 };
 
-const customer = address;
+customer.address = {
+  street: "Amazing street",
+  city: "London",
+  state: "Middlesex",
+  zipcode: "NW67EU",
+};
 
-customer.address = Amazing street;
-customer.address = London;
-customer.address = Middlesex;
-customer.address = NW67EU;
+console.log(`Welcome, ${customer.firstName}`);
+
+const product = {
+  name: "",
+  price: 10,
+  description: "",
+  quantity: 10,
+};
+
+const total = product.price * 7;
+
+console.log(total >= 100);
+
+//product.quantity = product.quantity -7;
+product.quantity -= 7;
 
 /**
  * TODO: Assign your own values to meet the conditions below:
