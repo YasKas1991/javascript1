@@ -35,9 +35,11 @@ if (product.quantity) {
 } else {
   console.log("Out of stock");
 }
-// This time we are using an object as the value (nested objects)
-// Objects are passed by REFERENCE!
-  productVerbiage,
+
+const productVerbiage = {
+  name: "Product",
+  description: "This is a great product to buy!",
+};
 
 // Any non-empty string is truthy
 
